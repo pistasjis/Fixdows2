@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "Fixdows2 (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "Fixdows2 (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}

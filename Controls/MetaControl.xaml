@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="Fixdows2.Controls.MetaControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fixdows2.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical" Spacing="20">
+                <TextBlock Text="What is Fixdows?" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                <RichTextBlock>
+                    <Paragraph>Fixdows is an open-source utility that aims to help you fix issues with your Windows installation.</Paragraph>
+                    <Paragraph>I originally made Fixdows in late 2020, when I was 13. Around June 2021 I archived the GitHub repository and stopped development shortly after the announcement of Windows 11.</Paragraph>
+                    <Paragraph>I've grown and changed as a person since then, and around 2022 I felt like remaking Fixdows in a more modern Windows UI development platform. In 2023 I started taking the rewrite seriously, which is where we are right now. The new Fixdows is powered by WinUI 3 and .NET, while the old one used WPF and .NET Framework. I hope you enjoy the new Fixdows.</Paragraph>
+                </RichTextBlock>
+                <TextBlock Text="Find Fixdows" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Button Click="OpenGitHub">GitHub</Button>
+                </StackPanel>
+                <TextBlock Text="Support Fixdows" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Button Click="Donation_Click">
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <FontIcon Glyph="&#xEB51;" FontSize="14" />
+                            <TextBlock Text="Donate to Fixdows"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <TextBlock Text="Fixdows info" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                <StackPanel Orientation="Horizontal" Spacing="2">
+                    <TextBlock Text="You're running version" />
+                    <TextBlock Text="{Binding Path=Version}" />
+                </StackPanel>
+                <TextBlock>
+                        <Span>Fixdows logo designed by <Hyperlink NavigateUri="https://midou.dev">Midou36O</Hyperlink></Span>
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

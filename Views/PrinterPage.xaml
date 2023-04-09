@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Fixdows2.Views.PrinterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fixdows2.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentArea">
+        <StackPanel Orientation="Vertical" Spacing="20">
+            <TextBlock x:Uid="PrinterDescription" TextWrapping="Wrap" />
+            <!-- I'd love to turn this into a control, but it's so hacky I don't bother. :(-->
+            <Button Click="Button_Click">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <FontIcon Glyph="&#xEA18;" FontSize="14" />
+                    <TextBlock Text="Run" />
+                </StackPanel>
+            </Button>
+
+            <local:OutputControl x:Name="Output" Output="The output of the action will be shown here." />
+        </StackPanel>
+    </Grid>
+</Page>

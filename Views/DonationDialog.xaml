@@ -1,0 +1,17 @@
+<ContentDialog
+    x:Class="Fixdows2.Views.DonationDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="A bit on why you should donate to Fixdows"
+    PrimaryButtonText="Donate"
+    CloseButtonText="Close"
+    DefaultButton="Primary"
+    Style="{ThemeResource DefaultContentDialogStyle}"
+    >
+
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderBrush="{ThemeResource ContentDialogBorderThemeBrush}">
+        <!-- Content body -->
+        <TextBlock Text="Fixdows is an open source utility to repair Windows issues made by a single person. If Fixdows has helped you fix an issue on your or someone you know's computer, please consider donating. I also don't intend to sell out when it comes to Fixdows (paid subscriptions, sell Fixdows to a corporation etc), so if you want to help fund Fixdows development the best way is to donate." TextWrapping="Wrap" />
+    </StackPanel>
+
+</ContentDialog>
