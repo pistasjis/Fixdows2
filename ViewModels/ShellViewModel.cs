@@ -10,7 +10,7 @@ namespace Fixdows2.ViewModels;
 public class ShellViewModel : ObservableRecipient
 {
     private bool _isBackEnabled;
-    private object? _selected;
+    private object _selected;
 
     public INavigationService NavigationService
     {
@@ -28,7 +28,7 @@ public class ShellViewModel : ObservableRecipient
         set => SetProperty(ref _isBackEnabled, value);
     }
 
-    public object? Selected
+    public object Selected
     {
         get => _selected;
         set => SetProperty(ref _selected, value);

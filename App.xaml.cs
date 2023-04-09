@@ -6,9 +6,6 @@ using Fixdows2.Services;
 using Fixdows2.ViewModels;
 using Fixdows2.Views;
 
-using Fixdows2.Core.Contracts.Services;
-using Fixdows2.Core.Services;
-
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.UI.Xaml;

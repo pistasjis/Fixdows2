@@ -2,13 +2,10 @@
 using Fixdows2.Helpers;
 using Fixdows2.Models;
 
-using Fixdows2.Core.Contracts.Services;
-
 using Microsoft.Extensions.Options;
 
 using Windows.ApplicationModel;
 using Windows.Storage;
-using Fixdows2.Core.Helpers;
 
 namespace Fixdows2.Services;
 
@@ -49,7 +46,7 @@ public class LocalSettingsService : ILocalSettingsService
         }
     }
 
-    public async Task<T?> ReadSettingAsync<T>(string key)
+    public async Task<T> ReadSettingAsync<T>(string key)
     {
         if (RuntimeHelper.IsMSIX)
         {

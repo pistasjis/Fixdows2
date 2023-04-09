@@ -9,11 +9,11 @@ namespace Fixdows2.Behaviors;
 
 public class NavigationViewHeaderBehavior : Behavior<NavigationView>
 {
-    private static NavigationViewHeaderBehavior? _current;
+    private static NavigationViewHeaderBehavior _current;
 
-    private Page? _currentPage;
+    private Page _currentPage;
 
-    public DataTemplate? DefaultHeaderTemplate
+    public DataTemplate DefaultHeaderTemplate
     {
         get; set;
     }

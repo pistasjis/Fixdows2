@@ -14,12 +14,12 @@ namespace Fixdows2.Services;
 public class NavigationService : INavigationService
 {
     private readonly IPageService _pageService;
-    private object? _lastParameterUsed;
-    private Frame? _frame;
+    private object _lastParameterUsed;
+    private Frame _frame;
 
-    public event NavigatedEventHandler? Navigated;
+    public event NavigatedEventHandler Navigated;
 
-    public Frame? Frame
+    public Frame Frame
     {
         get
         {
@@ -81,7 +81,7 @@ public class NavigationService : INavigationService
         return false;
     }
 
-    public bool NavigateTo(string pageKey, object? parameter = null, bool clearNavigation = false)
+    public bool NavigateTo(string pageKey, object parameter = null, bool clearNavigation = false)
     {
         var pageType = _pageService.GetPageType(pageKey);
 

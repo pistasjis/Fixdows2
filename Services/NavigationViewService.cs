@@ -14,11 +14,11 @@ public class NavigationViewService : INavigationViewService
 
     private readonly IPageService _pageService;
 
-    private NavigationView? _navigationView;
+    private NavigationView _navigationView;
 
-    public IList<object>? MenuItems => _navigationView?.MenuItems;
+    public IList<object> MenuItems => _navigationView?.MenuItems;
 
-    public object? SettingsItem => _navigationView?.SettingsItem;
+    public object SettingsItem => _navigationView?.SettingsItem;
 
     public NavigationViewService(INavigationService navigationService, IPageService pageService)
     {
@@ -43,7 +43,7 @@ public class NavigationViewService : INavigationViewService
         }
     }
 
-    public NavigationViewItem? GetSelectedItem(Type pageType)
+    public NavigationViewItem GetSelectedItem(Type pageType)
     {
         if (_navigationView != null)
         {
@@ -72,7 +72,7 @@ public class NavigationViewService : INavigationViewService
         }
     }
 
-    private NavigationViewItem? GetSelectedItem(IEnumerable<object> menuItems, Type pageType)
+    private NavigationViewItem GetSelectedItem(IEnumerable<object> menuItems, Type pageType)
     {
         foreach (var item in menuItems.OfType<NavigationViewItem>())
         {
