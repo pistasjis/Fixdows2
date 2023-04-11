@@ -1,6 +1,6 @@
 ﻿<h1><img src="Assets/fixdows-final.png" alt="Fixdows" width="30" /> Fixdows</h1>
 
-<a href="ms-windows-store://pdp/?ProductId=XPDC2RH70K22MN&mode=mini">
+<a href="ms-windows-store://pdp/?ProductId=9NKSGDKQ4L85&mode=mini">
    <img src="https://get.microsoft.com/images/en-us%20dark.svg" height="48" alt="Download Fixdows" />
 </a>
 
@@ -18,7 +18,7 @@ More will be added in the future.
 
 ## Download
 
-The recommended place to get Fixdows is from [Microsoft Store](https://www.microsoft.com/store/apps/9NQZKZJZ4Z0V). I will also be adding GitHub releases in the future.
+The recommended place to get Fixdows is from [Microsoft Store](https://www.microsoft.com/store/apps/9NKSGDKQ4L85). I will also be adding GitHub releases in the future.
 
 ## i18n
 
